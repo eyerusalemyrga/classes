@@ -33,7 +33,7 @@ function simulateAccessIfElse(userRole) {
 
 function simulateAccess(userRole) {
     switch(userRole) {
-        case 'betaTesters':
+        
         case 'admins':
             if (newfeature.canAccess(userRole)) {
                 console.log(`access granted`);
@@ -94,7 +94,7 @@ const exampleLogs = [
     {date: '2025-05-12', hoursWorked: 1},
 ];
 
-const timeLogone = new TimeLog('John ', {name: 'Javascriptproject', hourlyRate: 40}, exampleLogs);
+const timeLogone = new TimeLog('James ', {name: 'backendassignment', hourlyRate: 40}, exampleLogs);
 
 console.log( timeLogone.calculateTotalEarnings());
 console.log(timeLogone.filterLogsByDateRange('2024-09-13', '2025-10-09'));
